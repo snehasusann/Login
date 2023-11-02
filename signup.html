@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .signup-box {
+      width: 300px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="password"],
+    .signup-box input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .signup-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #588d9b;
+      border: 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign Up Form</title>
+  <title>Login Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
     }
 
-    .signup-box {
+    .login-box {
       width: 300px;
       margin: 0 auto;
       background: #f9f9f9;
@@ -16,16 +16,15 @@
       border: 1px solid #ccc;
     }
 
-    .signup-box input[type="text"],
-    .signup-box input[type="password"],
-    .signup-box input[type="email"] {
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
       width: 100%;
       padding: 10px;
       margin-bottom: 20px;
       border: 1px solid #ddd;
     }
 
-    .signup-box input[type="submit"] {
+    .login-box input[type="submit"] {
       width: 100%;
       padding: 10px;
       background: #588d9b;
@@ -35,16 +34,14 @@
   </style>
 </head>
 <body>
-  <div class="signup-box">
-    <h2>Sign Up</h2>
-    <form action="/signup" method="post">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="/login" method="post">
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
-      <input type="submit" value="Sign Up">
+      <input type="submit" value="Login">
     </form>
   </div>
 </body>
